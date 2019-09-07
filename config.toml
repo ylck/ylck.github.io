@@ -21,3 +21,7 @@ even_menu = [
 ]
 
 even_title = "ylck 小窝"
+
+disqus = "ylck-me.disqus.com"
+
+even_google_analytics = "UA-74081397-1"

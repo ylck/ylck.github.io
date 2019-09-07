@@ -1,15 +1,33 @@
 {% macro title(page) %}
-    <header class="post__header">
-        <h1 class="post__title">
-            <a href="{{ page.permalink }}">{{ page.title }}</a>
-        </h1>
-        <div class="post__meta">
-            <span class="post__time">{{ page.date | date(format="%F") }}</span>
-            {% if page.category %}
-                <div class="post__category">
-                    <a href="{{ get_taxonomy_url(kind="category", name=page.category) }}">{{ page.category }}</a>
-                </div>
-            {% endif %}
+<header class="post__header">
+    <h1 class="post__title">
+        <a href="{{ page.permalink }}">{{ page.title }}</a>
+    </h1>
+    <div class="post__meta">
+        <span class="post__time">{{ page.date | date(format="%F") }}</span>
+        {% if page.category %}
+        <div class="post__category">
+            <a href="{{ get_taxonomy_url(kind="category", name=page.category) }}">{{ page.category }}</a>
         </div>
-    </header>
+        {% endif %}
+    </div>
+</header>
 {% endmacro title %}
+
+{% macro disqus() %}
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = '{{ current_url | safe }}';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '{{ current_path | safe }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://{{ config.extra.disqus | safe }}/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+{% endmacro disqus %}
