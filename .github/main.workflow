@@ -5,7 +5,7 @@ workflow "Build and deploy on push" {
 
 action "zola deploy" {
   uses = "shalzz/zola-deploy-action@master"
-  secrets = ["blog-build"]
+  secrets = ["BLOG_BUILD"]
   env = {
     PAGES_BRANCH = "master"
   }
