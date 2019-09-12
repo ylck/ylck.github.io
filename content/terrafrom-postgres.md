@@ -8,7 +8,8 @@ tags = ["postgress","terrafrom"]
 +++
 
 - ## terrafrom 在资源管理上是个好工具。 可以对接N多个资源。
-
+#### 思考一 可以管理申请的测试或生产数据库，既保留了数据库信息，也保证了创建出的数据库配置的统一性。
+（如 mysql utf8和utf8mb4配置的坑）
 ```bash
 # postgres链接方法定义
 provider "postgresql" {
