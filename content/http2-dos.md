@@ -1,0 +1,16 @@
++++
+title = "Http2 dos"
+date =  2019-09-12T15:28:59+08:00
+
+[taxonomies]
+categories = ["http2","ddos"]
+tags = ["http2","ddos"]
++++
+
+
+
+# 参考
+[受影响组件列表](https://vuls.cert.org/confluence/pages/viewpage.action?pageId=56393752)
+
+[细节解析](https://randywestergren.com/a-closer-look-at-recent-http-2-vulnerabilities-affecting-k8s-and-other-implementations/)
+
