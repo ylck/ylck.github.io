@@ -14,3 +14,4 @@ tags = ["http2","ddos"]
 
 [细节解析](https://randywestergren.com/a-closer-look-at-recent-http-2-vulnerabilities-affecting-k8s-and-other-implementations/)
 
+[安全厂商解读](https://zh-cn.tenable.com/blog/multiple-denial-of-service-dos-vulnerabilities-in-http2-disclosed-cve-2019-9511-cve-2019-9518?tns_redirect=true)
