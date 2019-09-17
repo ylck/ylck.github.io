@@ -15,5 +15,5 @@ tags = ["postgress","wasm","wasi"]
 [WebAssembly Interface Types: Interoperate with All the Things!](https://hacks.mozilla.org/2019/08/webassembly-interface-types/)
 
 [pgxs](https://www.postgresql.org/docs/current/extend-pgxs.html)
-[wasi](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/)
 
+[wasi](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/)
