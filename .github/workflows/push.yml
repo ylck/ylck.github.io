@@ -1,0 +1,13 @@
+on: push
+name: Build and deploy on push
+jobs:
+  zolaDeploy:
+    name: zola deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: zola deploy
+      uses: shalzz/zola-deploy-action@master
+      env:
+        PAGES_BRANCH: master
+        TOKEN: ${{ secrets.TOKEN }}
