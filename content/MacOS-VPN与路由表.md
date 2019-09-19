@@ -1,15 +1,16 @@
 +++
 title = "MacOS-VPN与路由表"
-date =  2019-09-18+00:00
+date =  2019-09-18T15:28:59+08:00
+
 
 [taxonomies]
-categories = ["MacOS"，"router"]
-tags = ["MacOS"，"router"]
+categories = ["MacOS","router"]
+tags = ["MacOS","router"]
 +++
 
 > `brew install iproute2mac`
 ```bash
-    #! /bin/sh
+#! /bin/sh
 set -x
 #GATEWAY_IP=$(ip route show default | awk '{ print $3}')
 #GATEWAY_IP=192.168.1.1

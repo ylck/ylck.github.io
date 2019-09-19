@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ylck</title>
+        <link>https%3A//ylck.me</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https%3A//ylck.me/tags/postgress/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Wed, 11 Sep 2019 16:28:59 +0800</lastBuildDate>
+        
+            <item>
+                <title>terrafrom与postgres</title>
+                <pubDate>Wed, 11 Sep 2019 16:28:59 +0800</pubDate>
+                <link>https%3A//ylck.me/terrafrom-postgres/</link>
+                <guid>https%3A//ylck.me/terrafrom-postgres/</guid>
+                <description>&lt;ul&gt;
+&lt;li&gt;&lt;h2 id=&quot;terrafrom-zai-zi-yuan-guan-li-shang-shi-ge-hao-gong-ju-ke-yi-dui-jie-nduo-ge-zi-yuan&quot;&gt;terrafrom 在资源管理上是个好工具。 可以对接N多个资源。&lt;&#x2F;h2&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;si-kao-yi-ke-yi-guan-li-shen-qing-de-ce-shi-huo-sheng-chan-shu-ju-ku-ji-bao-liu-liao-shu-ju-ku-xin-xi-ye-bao-zheng-liao-chuang-jian-chu-de-shu-ju-ku-pei-zhi-de-tong-yi-xing&quot;&gt;思考一 可以管理申请的测试或生产数据库，既保留了数据库信息，也保证了创建出的数据库配置的统一性。&lt;&#x2F;h4&gt;
+&lt;p&gt;（如 mysql utf8和utf8mb4配置的坑）&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;span style=&quot;color:#65737e;&quot;&gt;# postgres链接方法定义
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;provider &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;postgresql&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; {
+  host     = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;127.0.0.1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;
+  port     = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;5432&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;
+  username = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;postgres&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;
+  password = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;toor&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;
+  ssl_mode = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;disable&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;
+}
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# 数据库定义
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;resource &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;postgresql_role&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;myuser&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; {
+  name      = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;myuser&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;
+  login     = true
+  password  = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;put_your_user_password&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;
+  encrypted = true
+}
+
+
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# 权限定义
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;resource &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;postgresql_database&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;myuser&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; {
+  name  = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;myuser&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;
+  owner = &amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;postgresql_role.myuser.name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;
+}
+
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# terraform init &amp;amp;&amp;amp; terraform plan &amp;amp;&amp;amp; terraform apply
+
+&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.terraform.io&#x2F;docs&#x2F;providers&#x2F;index.html&quot;&gt;terraform-providers&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;terraform-aws-modules&#x2F;terraform-aws-rds&#x2F;tree&#x2F;master&#x2F;examples&#x2F;complete-postgres&quot;&gt;terraform-aws-rds&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;qiita.com&#x2F;yamamoto-febc&#x2F;items&#x2F;3979d81c6b0aba324a07&quot;&gt;terraform-pg&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>wasm与wasi相关</title>
+                <pubDate>Wed, 11 Sep 2019 11:28:59 +0800</pubDate>
+                <link>https%3A//ylck.me/wasm-wasixiang-guan/</link>
+                <guid>https%3A//ylck.me/wasm-wasixiang-guan/</guid>
+                <description>&lt;h1 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wasmerio&#x2F;postgres-ext-wasm.git&quot;&gt;wasmerio&#x2F;postgres-ext-wasm&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;hacks.mozilla.org&#x2F;2019&#x2F;08&#x2F;webassembly-interface-types&#x2F;&quot;&gt;WebAssembly Interface Types: Interoperate with All the Things!&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;extend-pgxs.html&quot;&gt;pgxs&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;hacks.mozilla.org&#x2F;2019&#x2F;03&#x2F;standardizing-wasi-a-webassembly-system-interface&#x2F;&quot;&gt;wasi&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Pg Explain</title>
+                <pubDate>Mon, 15 Oct 2018 11:28:59 +0800</pubDate>
+                <link>https%3A//ylck.me/pg-explain/</link>
+                <guid>https%3A//ylck.me/pg-explain/</guid>
+                <description>&lt;h1 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;dreamer-yzy.github.io&#x2F;2014&#x2F;12&#x2F;23&#x2F;PostgreSQL%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%92%E5%92%8C%E6%88%90%E6%9C%AC%E5%9B%A0%E5%AD%90%E8%AF%A6%E8%A7%A3&#x2F;&quot;&gt;PostgreSQL执行计划和成本因子详解&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>
