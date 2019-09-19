@@ -22,4 +22,5 @@ tags = ["postgress","wasm","wasi"]
 
 [wasi.dev](https://wasi.dev/polyfill/)
 
+[wasmer-guess-game](https://huangjj27.gitlab.io/posts/wasmer-guess-game/)
 
