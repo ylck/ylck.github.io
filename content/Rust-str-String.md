@@ -13,5 +13,4 @@ tags = ["Rust"]
 # 参考
 [what-are-the-differences-between-rusts-string-and-str](https://stackoverflow.com/questions/24158114/what-are-the-differences-between-rusts-string-and-str)
 
-[string-and-andstr-in-rust.pdf](https://github.com/jeenalee/zines/blob/master/string-and-andstr-in-rust.pdf)](https://github.com/jeenalee/zines/blob/master/string-and-andstr-in-rust.pdf)
-
+[string-and-andstr-in-rust.pdf](https://github.com/jeenalee/zines/blob/master/string-and-andstr-in-rust.pdf)
