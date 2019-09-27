@@ -27,6 +27,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/categories/gre/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/categories/haproxy/</loc>
             
         </url>
@@ -52,7 +57,17 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/categories/ospf/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/categories/postgress/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/categories/quagga/</loc>
             
         </url>
     
@@ -92,6 +107,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/categories/wireguard/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/cloudflare-warpde-ji-zhu-tiao-zhan/</loc>
             
                 <lastmod>2019-09-27T11:28:59+08:00</lastmod>
@@ -119,6 +139,11 @@
     
         <url>
             <loc>https%3A//ylck.me/page/2/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/page/3/</loc>
             
         </url>
     
@@ -166,6 +191,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/tags/gre/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/tags/haproxy/</loc>
             
         </url>
@@ -191,7 +221,17 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/tags/ospf/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/tags/postgress/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/tags/quagga/</loc>
             
         </url>
     
@@ -236,6 +276,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/tags/wireguard/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/terrafrom-postgres/</loc>
             
                 <lastmod>2019-09-11T16:28:59+08:00</lastmod>
@@ -253,6 +298,13 @@
             <loc>https%3A//ylck.me/wasm-wasixiang-guan/</loc>
             
                 <lastmod>2019-09-11T11:28:59+08:00</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/wireguard-quaggashi-xian-ospfzu-bo/</loc>
+            
+                <lastmod>2019-09-27T11:28:59+08:00</lastmod>
             
         </url>
     
