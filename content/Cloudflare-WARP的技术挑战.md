@@ -3,8 +3,8 @@ title = "Pg Explain"
 date =  2019-09-27T11:28:59+08:00
 
 [taxonomies]
-categories = ["network","cloudflare"，"ipv6"]
-tags = ["network","cloudflare"，"ipv6"]
+categories = ["network","cloudflare","ipv6"]
+tags = ["network","cloudflare","ipv6"]
 +++
 
 

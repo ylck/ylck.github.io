@@ -17,6 +17,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/categories/cloudflare/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/categories/ddos/</loc>
             
         </url>
@@ -32,7 +37,17 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/categories/ipv6/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/categories/macos/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/categories/network/</loc>
             
         </url>
     
@@ -77,6 +92,13 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/cloudflare-warpde-ji-zhu-tiao-zhan/</loc>
+            
+                <lastmod>2019-09-27T11:28:59+08:00</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/http2-dos/</loc>
             
                 <lastmod>2019-09-12T15:28:59+08:00</lastmod>
@@ -115,6 +137,13 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/rustsuo-you-quan/</loc>
+            
+                <lastmod>2018-10-15T11:28:59+08:00</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/systemd-template/</loc>
             
                 <lastmod>2018-10-09T12:01:03+08:00</lastmod>
@@ -123,6 +152,11 @@
     
         <url>
             <loc>https%3A//ylck.me/tags/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/tags/cloudflare/</loc>
             
         </url>
     
@@ -142,7 +176,17 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/tags/ipv6/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/tags/macos/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/tags/network/</loc>
             
         </url>
     
