@@ -1,0 +1,10 @@
+account_id = "d3ad37657616443f98799a28bfa14155"
+name = "ylck-blog"
+type = "webpack"
+route = ""
+workers_dev = true
+zone_id = "ebc59cdf6f601d66fd1a59bf2b3b2d73"
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"

@@ -27,6 +27,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/categories/golang/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/categories/gre/</loc>
             
         </url>
@@ -82,6 +87,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/categories/shell/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/categories/systemd/</loc>
             
         </url>
@@ -115,6 +125,13 @@
             <loc>https%3A//ylck.me/cloudflare-warpde-ji-zhu-tiao-zhan/</loc>
             
                 <lastmod>2019-09-27T11:28:59+08:00</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/golang-shell/</loc>
+            
+                <lastmod>2019-09-30T11:28:59+08:00</lastmod>
             
         </url>
     
@@ -191,6 +208,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/tags/golang/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/tags/gre/</loc>
             
         </url>
@@ -242,6 +264,11 @@
     
         <url>
             <loc>https%3A//ylck.me/tags/rust/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/tags/shell/</loc>
             
         </url>
     

@@ -7,6 +7,8 @@ categories = ["v2ray","Haproxy"]
 tags = ["v2ray","Haproxy","Tools"]
 +++
 
+## 💡 想法
+> 我需要用 RTT 延迟时间来做 vps 排序指标，但 Haproxy 没有 这样的配置项。
 
 > V2ray installe
 > <https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC>
