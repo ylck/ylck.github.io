@@ -27,6 +27,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/categories/clearlinux/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/categories/cloudflare/</loc>
             
         </url>
@@ -53,6 +58,11 @@
     
         <url>
             <loc>https%3A//ylck.me/categories/http2/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/categories/intel/</loc>
             
         </url>
     
@@ -144,6 +154,13 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/clearlinux/</loc>
+            
+                <lastmod>2018-10-15T11:28:59+08:00</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/cloudflare-warpde-ji-zhu-tiao-zhan/</loc>
             
                 <lastmod>2019-09-27T11:28:59+08:00</lastmod>
@@ -230,6 +247,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/tags/clearlinux/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/tags/cloudflare/</loc>
             
         </url>
@@ -256,6 +278,11 @@
     
         <url>
             <loc>https%3A//ylck.me/tags/http2/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/tags/intel/</loc>
             
         </url>
     
