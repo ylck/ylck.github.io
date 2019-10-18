@@ -1,0 +1,13 @@
++++
+title = "Centos8与性能优化"
+date =  2019-10-18T17:28:59+08:00
+
+[taxonomies]
+categories = ["Centos8","bcc/BPF","tuned"]
+tags = ["Centos8","bcc/BPF","tuned"]
++++
+
+
+
+# 参考
+[RHEL8 发行说明](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/considerations_in_adopting_rhel_8/index#performance-analysis-and-observability-tools_kernel)

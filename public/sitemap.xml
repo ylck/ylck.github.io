@@ -17,6 +17,16 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/categories/bcc-bpf/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/categories/centos8/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/categories/cloudflare/</loc>
             
         </url>
@@ -102,6 +112,11 @@
         </url>
     
         <url>
+            <loc>https%3A//ylck.me/categories/tuned/</loc>
+            
+        </url>
+    
+        <url>
             <loc>https%3A//ylck.me/categories/v2ray/</loc>
             
         </url>
@@ -118,6 +133,13 @@
     
         <url>
             <loc>https%3A//ylck.me/categories/wireguard/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/centos8yu-xing-neng-you-hua/</loc>
+            
+                <lastmod>2019-10-18T17:28:59+08:00</lastmod>
             
         </url>
     
@@ -194,6 +216,16 @@
     
         <url>
             <loc>https%3A//ylck.me/tags/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/tags/bcc-bpf/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/tags/centos8/</loc>
             
         </url>
     
@@ -284,6 +316,11 @@
     
         <url>
             <loc>https%3A//ylck.me/tags/tools/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https%3A//ylck.me/tags/tuned/</loc>
             
         </url>
     

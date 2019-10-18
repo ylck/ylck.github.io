@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ylck</title>
+        <link>https%3A//ylck.me</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https%3A//ylck.me/categories/centos8/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Fri, 18 Oct 2019 17:28:59 +0800</lastBuildDate>
+        
+            <item>
+                <title>Centos8与性能优化</title>
+                <pubDate>Fri, 18 Oct 2019 17:28:59 +0800</pubDate>
+                <link>https%3A//ylck.me/centos8yu-xing-neng-you-hua/</link>
+                <guid>https%3A//ylck.me/centos8yu-xing-neng-you-hua/</guid>
+                <description>&lt;h1 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;access.redhat.com&#x2F;documentation&#x2F;en-us&#x2F;red_hat_enterprise_linux&#x2F;8&#x2F;html-single&#x2F;considerations_in_adopting_rhel_8&#x2F;index#performance-analysis-and-observability-tools_kernel&quot;&gt;RHEL8 发行说明&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>
