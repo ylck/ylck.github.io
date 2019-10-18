@@ -1,6 +1,6 @@
 +++
 title = "Clear Linux"
-date =  2018-10-15T11:28:59+08:00
+date =  2019-10-18T17:28:59+08:00
 
 [taxonomies]
 categories = ["clearlinux","intel"]
