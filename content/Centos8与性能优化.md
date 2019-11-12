@@ -6,7 +6,17 @@ date =  2019-10-18T17:28:59+08:00
 categories = ["Centos8","bcc/BPF","tuned"]
 tags = ["Centos8","bcc/BPF","tuned"]
 +++
+> ### tuned
 
+```shell
+    set 
+    
+    tuned-adm profile network-latency   throughput-performance powersave 
+
+    get 
+
+    tuned-adm active
+```
 
 
 # 参考
