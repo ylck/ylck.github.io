@@ -1,12 +1,13 @@
 +++
 title = "故障排查"
-date =  2019-12-1T12:28:59+08:00
+date =  2019-12-1T11:28:59+08:00
 
 [taxonomies]
 categories = ["Network","Linux","Containe"]
 tags = ["Network","Linux","Containe"]
 +++
-> ### 
+
+
 
 # 参考
 [debugging-network-stalls-on-kubernetes-GitHub](https://github.blog/2019-11-21-debugging-network-stalls-on-kubernetes/)
