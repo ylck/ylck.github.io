@@ -2,18 +2,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>ylck</title>
-        <link>https%3A//ylck.me</link>
+        <link>https://ylck.me</link>
         <description></description>
         <generator>Zola</generator>
         <language>en</language>
-        <atom:link href="https%3A//ylck.me/categories/rust/rss.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://ylck.me/categories/rust/rss.xml" rel="self" type="application/rss+xml"/>
         <lastBuildDate>Wed, 11 Sep 2019 11:28:59 +0800</lastBuildDate>
         
             <item>
                 <title>Rust-Str-String</title>
                 <pubDate>Wed, 11 Sep 2019 11:28:59 +0800</pubDate>
-                <link>https%3A//ylck.me/rust-str-string/</link>
-                <guid>https%3A//ylck.me/rust-str-string/</guid>
+                <link>https://ylck.me/rust-str-string/</link>
+                <guid>https://ylck.me/rust-str-string/</guid>
                 <description>&lt;blockquote&gt;
 &lt;p&gt;Str-String 练习
 https:&#x2F;&#x2F;github.com&#x2F;rust-lang&#x2F;rustlings&#x2F;tree&#x2F;master&#x2F;exercises&#x2F;strings: No such file or directory&lt;&#x2F;p&gt;

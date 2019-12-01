@@ -2,18 +2,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>ylck</title>
-        <link>https%3A//ylck.me</link>
+        <link>https://ylck.me</link>
         <description></description>
         <generator>Zola</generator>
         <language>en</language>
-        <atom:link href="https%3A//ylck.me/categories/macos/rss.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://ylck.me/categories/macos/rss.xml" rel="self" type="application/rss+xml"/>
         <lastBuildDate>Wed, 18 Sep 2019 15:28:59 +0800</lastBuildDate>
         
             <item>
                 <title>MacOS-VPN与路由表</title>
                 <pubDate>Wed, 18 Sep 2019 15:28:59 +0800</pubDate>
-                <link>https%3A//ylck.me/macos-vpnyu-lu-you-biao/</link>
-                <guid>https%3A//ylck.me/macos-vpnyu-lu-you-biao/</guid>
+                <link>https://ylck.me/macos-vpnyu-lu-you-biao/</link>
+                <guid>https://ylck.me/macos-vpnyu-lu-you-biao/</guid>
                 <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;brew install iproute2mac&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;

@@ -2,18 +2,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>ylck</title>
-        <link>https%3A//ylck.me</link>
+        <link>https://ylck.me</link>
         <description></description>
         <generator>Zola</generator>
         <language>en</language>
-        <atom:link href="https%3A//ylck.me/tags/v2ray/rss.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://ylck.me/tags/v2ray/rss.xml" rel="self" type="application/rss+xml"/>
         <lastBuildDate>Sun, 15 Sep 2019 11:28:59 +0800</lastBuildDate>
         
             <item>
                 <title>V2ray Haproxy</title>
                 <pubDate>Sun, 15 Sep 2019 11:28:59 +0800</pubDate>
-                <link>https%3A//ylck.me/v2ray-haproxy/</link>
-                <guid>https%3A//ylck.me/v2ray-haproxy/</guid>
+                <link>https://ylck.me/v2ray-haproxy/</link>
+                <guid>https://ylck.me/v2ray-haproxy/</guid>
                 <description>&lt;h2 id=&quot;bulb-xiang-fa&quot;&gt;💡 想法&lt;&#x2F;h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我需要用 RTT 延迟时间来做 vps 排序指标，但 Haproxy 没有 这样的配置项。&lt;&#x2F;p&gt;
