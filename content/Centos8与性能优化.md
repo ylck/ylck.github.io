@@ -17,7 +17,10 @@ tags = ["Centos8","bcc/BPF","tuned"]
 
     tuned-adm active
 ```
+> ### bcc-tools
 
+```
+```
 
 # 参考
 [RHEL8 发行说明](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/considerations_in_adopting_rhel_8/index#performance-analysis-and-observability-tools_kernel)
