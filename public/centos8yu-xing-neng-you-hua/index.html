@@ -136,6 +136,11 @@
                 </li>
                 
                 <li>
+                    <a href="https://ylck.me/centos8yu-xing-neng-you-hua/#firewall-cmd" class="toc-link">firewall-cmd</a>
+                    
+                </li>
+                
+                <li>
                     <a href="https://ylck.me/centos8yu-xing-neng-you-hua/#can-kao" class="toc-link">参考</a>
                     
                 </li>
@@ -175,7 +180,19 @@
 <h3 id="bcc-tools">bcc-tools</h3>
 </blockquote>
 <pre style="background-color:#2b303b;">
-</pre><h1 id="can-kao">参考</h1>
+<span style="color:#c0c5ce;">    cd /usr/share/bcc/tools/
+    ./tcplif
+</span></pre>
+<blockquote>
+<h3 id="firewall-cmd">firewall-cmd</h3>
+</blockquote>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">    firewall-cmd --list-ports
+    firewall-cmd --zone=dmz --add-port=8080/tcp  --permanent
+    firewall-cmd --remove-forward-port=port=8080:proto=tcp:toport=80:toaddr=
+    firewall-cmd --reload
+    firewall-cmd --permanent --add-service=samba
+</span></pre><h1 id="can-kao">参考</h1>
 <p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/considerations_in_adopting_rhel_8/index#performance-analysis-and-observability-tools_kernel">RHEL8 发行说明</a></p>
 <p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/monitoring_and_managing_system_status_and_performance/getting-started-with-tuned_monitoring-and-managing-system-status-and-performance#tuned-profiles_getting-started-with-tuned">tuned</a></p>
 

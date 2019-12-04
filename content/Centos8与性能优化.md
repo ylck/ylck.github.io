@@ -20,6 +20,19 @@ tags = ["Centos8","bcc/BPF","tuned"]
 > ### bcc-tools
 
 ```
+    cd /usr/share/bcc/tools/
+    ./tcplif
+```
+
+
+> ### firewall-cmd
+
+```
+    firewall-cmd --list-ports
+    firewall-cmd --zone=dmz --add-port=8080/tcp  --permanent
+    firewall-cmd --remove-forward-port=port=8080:proto=tcp:toport=80:toaddr=
+    firewall-cmd --reload
+    firewall-cmd --permanent --add-service=samba
 ```
 
 # 参考
