@@ -29,7 +29,7 @@ tags = ["Centos8","bcc/BPF","tuned"]
 
 ```
     firewall-cmd --list-ports
-    firewall-cmd --zone=dmz --add-port=8080/tcp  --permanent
+    firewall-cmd --add-port=8080/tcp  --permanent
     firewall-cmd --remove-forward-port=port=8080:proto=tcp:toport=80:toaddr=
     firewall-cmd --reload
     firewall-cmd --permanent --add-service=samba
