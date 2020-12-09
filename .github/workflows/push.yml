@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: zola deploy
-      uses: shalzz/zola-deploy-action@main
+      uses: shalzz/zola-deploy-action@master
       env:
         PAGES_BRANCH: main
         TOKEN: ${{ secrets.TOKEN }}
