@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://ylck.me/sitemap.xml

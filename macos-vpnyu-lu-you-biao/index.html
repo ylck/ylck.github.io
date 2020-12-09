@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>ylck - MacOS-VPN与路由表</title>
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74081397-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-74081397-1');
+    </script>
+    
+    
+
+    
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;ylck.me&#x2F;site.css">
+    
+    
+
+    
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="mobile-navbar" class="mobile-navbar">
+            <div class="mobile-header-logo">
+                <a href="/" class="logo">ylck 小窝</a>
+            </div>
+            <div class="mobile-navbar-icon icon-out">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav id="mobile-menu" class="mobile-menu slideout-menu slideout-menu-left">
+            <ul class="mobile-menu-list">
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;ylck.me">
+                        Home
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;ylck.me&#x2F;categories">
+                        Categories
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;ylck.me&#x2F;tags">
+                        Tags
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;ylck.me&#x2F;about">
+                        About
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <header id="header">
+            <div class="logo"><a href="https:&#x2F;&#x2F;ylck.me">ylck 小窝</a></div>
+            <nav class="menu">
+                <ul>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;ylck.me">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;ylck.me&#x2F;categories">
+                            Categories
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;ylck.me&#x2F;tags">
+                            Tags
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;ylck.me&#x2F;about">
+                            About
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content" id="mobile-panel">
+                
+
+
+
+<article class="post">
+    
+<header class="post__header">
+    <h1 class="post__title">
+        <a href="https:&#x2F;&#x2F;ylck.me&#x2F;macos-vpnyu-lu-you-biao&#x2F;">MacOS-VPN与路由表</a>
+    </h1>
+    <div class="post__meta">
+        <span class="post__time">2019-09-18</span>
+        
+    </div>
+</header>
+
+    <div class="post-content">
+        <blockquote>
+<p><code>brew install iproute2mac</code></p>
+</blockquote>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;">#! /bin/sh
+</span><span style="color:#96b5b4;">set </span><span style="color:#bf616a;">-x
+</span><span style="color:#65737e;">#GATEWAY_IP=$(ip route show default | awk &#39;{ print $3}&#39;)
+#GATEWAY_IP=192.168.1.1
+</span><span style="color:#c0c5ce;">read </span><span style="color:#bf616a;">-p </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">Input passwd: </span><span style="color:#c0c5ce;">&quot;  GATEWAY_IP &amp;&amp; </span><span style="color:#96b5b4;">echo </span><span style="color:#c0c5ce;">$</span><span style="color:#bf616a;">GATEWAY_IP
+ip</span><span style="color:#c0c5ce;"> route del default
+</span><span style="color:#bf616a;">ip</span><span style="color:#c0c5ce;"> route add default via GATEWAY_IP
+</span><span style="color:#65737e;">#rm -f china_ip_list.txt
+</span><span style="color:#c0c5ce;">wget</span><span style="color:#bf616a;"> -c</span><span style="color:#c0c5ce;"> https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
+</span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> i </span><span style="color:#b48ead;">in </span><span style="color:#c0c5ce;">$(</span><span style="color:#bf616a;">cat</span><span style="color:#c0c5ce;"> ./china_ip_list.txt)
+</span><span style="color:#b48ead;">do
+    </span><span style="color:#bf616a;">ip</span><span style="color:#c0c5ce;"> route add &quot;$</span><span style="color:#bf616a;">i</span><span style="color:#c0c5ce;">&quot; via &quot;$</span><span style="color:#bf616a;">GATEWAY_IP</span><span style="color:#c0c5ce;">&quot;  dev en0
+</span><span style="color:#b48ead;">done
+</span></code></pre>
+<blockquote>
+<p>重置
+sudo route -n flush; sudo route -n flush; sudo route -n flush;
+ifconfig en0 down&amp;&amp;ifconfig en0 up</p>
+</blockquote>
+<h1 id="can-kao">参考</h1>
+<p><a href="https://github.com/17mon/china_ip_list">china_ip_list</a>
+<a href="http://webdeveloper.gdemolished.com/how-to-flush-routing-table-on-a-mac/">flush-routing-table</a></p>
+
+    </div>
+
+    
+    
+
+    <div class="post-footer">
+        
+        
+        <div class="post-tags">
+            
+            <a href="https:&#x2F;&#x2F;ylck.me&#x2F;tags&#x2F;macos&#x2F;">#MacOS</a>
+            
+            <a href="https:&#x2F;&#x2F;ylck.me&#x2F;tags&#x2F;router&#x2F;">#router</a>
+            
+        </div>
+        
+        
+        <div class="post-nav">
+            
+            <a class="previous" href="https:&#x2F;&#x2F;ylck.me&#x2F;v2ray-haproxy&#x2F;">‹ V2ray Haproxy</a>
+            
+            
+            <a class="next" href="https:&#x2F;&#x2F;ylck.me&#x2F;wireguard-quaggashi-xian-ospfzu-bo&#x2F;">Wireguard-Quagga实现OSPF组播 ›</a>
+            
+            
+            
+        </div>
+        
+
+        
+
+    </div>
+
+    
+    
+    
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://ylck.me/macos-vpnyu-lu-you-biao/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '/macos-vpnyu-lu-you-biao/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://ylck-me.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+    
+    
+</article>
+
+
+            </div>
+        </main>
+
+        
+        
+    </div>
+
+    
+    <script type="text/javascript" src="https:&#x2F;&#x2F;ylck.me&#x2F;even.js"></script>
+    
+</body>
+
+</html>
