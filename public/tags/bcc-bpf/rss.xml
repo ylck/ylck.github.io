@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ylck</title>
+        <link>http://127.0.0.1:1111</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="http://127.0.0.1:1111/tags/bcc-bpf/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Fri, 18 Oct 2019 17:28:59 +0800</lastBuildDate>
+        
+            <item>
+                <title>Centos8与性能优化</title>
+                <pubDate>Fri, 18 Oct 2019 17:28:59 +0800</pubDate>
+                <link>http://127.0.0.1:1111/centos8yu-xing-neng-you-hua/</link>
+                <guid>http://127.0.0.1:1111/centos8yu-xing-neng-you-hua/</guid>
+                <description>&lt;blockquote&gt;
+&lt;h3 id=&quot;tuned&quot;&gt;tuned&lt;&#x2F;h3&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    set
+
+    tuned-adm profile network-latency   throughput-performance powersave
+
+    get
+
+    tuned-adm active
+&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;bcc-tools&quot;&gt;bcc-tools&lt;&#x2F;h3&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    cd &#x2F;usr&#x2F;share&#x2F;bcc&#x2F;tools&#x2F;
+    .&#x2F;tcplif
+&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;firewall-cmd&quot;&gt;firewall-cmd&lt;&#x2F;h3&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    firewall-cmd --list-ports
+    firewall-cmd --add-port=8080&#x2F;tcp  --permanent
+    firewall-cmd --remove-forward-port=port=8080:proto=tcp:toport=80:toaddr=
+    firewall-cmd --reload
+    firewall-cmd --permanent --add-service=samba
+&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;旧版本 &lt;code&gt;iptables&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;echo &amp;#39;net.ipv4.ip_forward = 1&amp;#39; &amp;gt;&amp;gt; &#x2F;etc&#x2F;sysctl.conf
+
+sysctl -p
+iptables -t nat -A PREROUTING -p udp -i eth0 --dport 51820 -j DNAT --to-destination 34.84.6.100:51820
+iptables -A FORWARD -p udp -d 34.84.6.100 --dport 51820 -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT∏
+&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;nice-renice&quot;&gt;nice&amp;amp;&amp;amp;renice&lt;&#x2F;h3&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于 CPU 密集型的程序 -20 fast 19 low&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;span style=&quot;color:#bf616a;&quot;&gt;renice -20 -g &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;`&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;pgrep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; v2ray`
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;1637&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; (process group ID) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;old&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; priority&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -20&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, new priority&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -20
+&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;access.redhat.com&#x2F;documentation&#x2F;en-us&#x2F;red_hat_enterprise_linux&#x2F;8&#x2F;html-single&#x2F;considerations_in_adopting_rhel_8&#x2F;index#performance-analysis-and-observability-tools_kernel&quot;&gt;RHEL8 发行说明&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;access.redhat.com&#x2F;documentation&#x2F;en-us&#x2F;red_hat_enterprise_linux&#x2F;8&#x2F;html&#x2F;monitoring_and_managing_system_status_and_performance&#x2F;getting-started-with-tuned_monitoring-and-managing-system-status-and-performance#tuned-profiles_getting-started-with-tuned&quot;&gt;tuned&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;linux.cn&#x2F;article-4742-1.html&quot;&gt;renice&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

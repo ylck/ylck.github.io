@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ylck</title>
+        <link>http://127.0.0.1:1111</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="http://127.0.0.1:1111/categories/wasi/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Wed, 11 Sep 2019 11:28:59 +0800</lastBuildDate>
+        
+            <item>
+                <title>wasm与wasi相关</title>
+                <pubDate>Wed, 11 Sep 2019 11:28:59 +0800</pubDate>
+                <link>http://127.0.0.1:1111/wasm-wasixiang-guan/</link>
+                <guid>http://127.0.0.1:1111/wasm-wasixiang-guan/</guid>
+                <description>&lt;h1 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wasmerio&#x2F;postgres-ext-wasm.git&quot;&gt;wasmerio&#x2F;postgres-ext-wasm&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;hacks.mozilla.org&#x2F;2019&#x2F;08&#x2F;webassembly-interface-types&#x2F;&quot;&gt;WebAssembly Interface Types: Interoperate with All the Things!&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;extend-pgxs.html&quot;&gt;pgxs&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;hacks.mozilla.org&#x2F;2019&#x2F;03&#x2F;standardizing-wasi-a-webassembly-system-interface&#x2F;&quot;&gt;wasi&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;wasi.dev&#x2F;&quot;&gt;wasi&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;wasi.dev&#x2F;polyfill&#x2F;&quot;&gt;wasi.dev&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;huangjj27.gitlab.io&#x2F;posts&#x2F;wasmer-guess-game&#x2F;&quot;&gt;wasmer-guess-game&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

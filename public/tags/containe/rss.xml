@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ylck</title>
+        <link>http://127.0.0.1:1111</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="http://127.0.0.1:1111/tags/containe/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sun, 01 Dec 2019 20:28:59 +0800</lastBuildDate>
+        
+            <item>
+                <title>故障排查</title>
+                <pubDate>Sun, 01 Dec 2019 20:28:59 +0800</pubDate>
+                <link>http://127.0.0.1:1111/problem-fix/</link>
+                <guid>http://127.0.0.1:1111/problem-fix/</guid>
+                <description>&lt;h1 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.blog&#x2F;2019-11-21-debugging-network-stalls-on-kubernetes&#x2F;&quot;&gt;debugging-network-stalls-on-kubernetes-GitHub&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;blog.cloudflare.com&#x2F;the-story-of-one-latency-spike&#x2F;&quot;&gt;网络延迟-cloudflare&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;bSNWPnFZ3g_gciOv_qNhIQ&quot;&gt;携程容器偶发性超时问题案例分析（一）&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;7ZZqWPE1XNf9Mn_wj1HjUw&quot;&gt;携程容器偶发性超时问题案例分析（二）&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ylck</title>
+        <link>http://127.0.0.1:1111</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="http://127.0.0.1:1111/tags/golang/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Mon, 30 Sep 2019 11:28:59 +0800</lastBuildDate>
+        
+            <item>
+                <title>Golang-Shell</title>
+                <pubDate>Mon, 30 Sep 2019 11:28:59 +0800</pubDate>
+                <link>http://127.0.0.1:1111/golang-shell/</link>
+                <guid>http://127.0.0.1:1111/golang-shell/</guid>
+                <description>&lt;h1 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dylanaraps&#x2F;pure-bash-bible&quot;&gt;shell模版片段&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;presstige.io&#x2F;p&#x2F;Using-Go-instead-of-bash-for-scripts-6b51885c1f6940aeb40476000d0eb0fc#8cd83e47-9913-48f2-8632-79fb335792d5&quot;&gt;Golang替代shell&lt;&#x2F;a&gt;··&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

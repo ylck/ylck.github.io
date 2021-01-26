@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>ylck - V2ray Haproxy</title>
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74081397-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-74081397-1');
+    </script>
+    
+    
+
+    
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;site.css">
+    
+    
+
+    
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="mobile-navbar" class="mobile-navbar">
+            <div class="mobile-header-logo">
+                <a href="/" class="logo">ylck 小窝</a>
+            </div>
+            <div class="mobile-navbar-icon icon-out">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav id="mobile-menu" class="mobile-menu slideout-menu slideout-menu-left">
+            <ul class="mobile-menu-list">
+                
+                <li class="mobile-menu-item">
+                    <a href="http:&#x2F;&#x2F;127.0.0.1:1111">
+                        Home
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;categories">
+                        Categories
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;tags">
+                        Tags
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;about">
+                        About
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <header id="header">
+            <div class="logo"><a href="http:&#x2F;&#x2F;127.0.0.1:1111">ylck 小窝</a></div>
+            <nav class="menu">
+                <ul>
+                    
+                    <li>
+                        <a href="http:&#x2F;&#x2F;127.0.0.1:1111">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;categories">
+                            Categories
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;tags">
+                            Tags
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;about">
+                            About
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content" id="mobile-panel">
+                
+
+
+<div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content always-active">
+        <nav id="TableOfContents">
+            <ul>
+                
+                <li>
+                    <a href="http://127.0.0.1:1111/v2ray-haproxy/#bulb-xiang-fa" class="toc-link">💡 想法</a>
+                    
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<article class="post">
+    
+<header class="post__header">
+    <h1 class="post__title">
+        <a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;v2ray-haproxy&#x2F;">V2ray Haproxy</a>
+    </h1>
+    <div class="post__meta">
+        <span class="post__time">2019-09-15</span>
+        
+    </div>
+</header>
+
+    <div class="post-content">
+        <h2 id="bulb-xiang-fa">💡 想法</h2>
+<blockquote>
+<p>我需要用 RTT 延迟时间来做 vps 排序指标，但 Haproxy 没有 这样的配置项。</p>
+</blockquote>
+<blockquote>
+<p>V2ray installe
+<a href="https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC">https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC</a></p>
+</blockquote>
+<pre style="background-color:#2b303b;">
+<span style="color:#bf616a;">bash </span><span style="color:#c0c5ce;">&lt;(</span><span style="color:#bf616a;">curl -s -L</span><span style="color:#c0c5ce;"> https://git.io/v2ray.sh)
+</span></pre>
+<blockquote>
+<p>Haproxy config</p>
+</blockquote>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">global
+    </span><span style="color:#bf616a;">log </span><span style="color:#d08770;">127.0.0.1</span><span style="color:#c0c5ce;"> local0 notice
+</span><span style="color:#b48ead;">    daemon
+    </span><span style="color:#bf616a;">nbproc </span><span style="color:#d08770;">8
+</span><span style="color:#b48ead;">
+defaults
+    </span><span style="color:#bf616a;">log </span><span style="color:#c0c5ce;">global
+    </span><span style="color:#bf616a;">mode </span><span style="color:#c0c5ce;">tcp
+    </span><span style="color:#bf616a;">balance </span><span style="color:#c0c5ce;">source
+
+    </span><span style="color:#bf616a;">option </span><span style="color:#c0c5ce;">redispatch      </span><span style="color:#65737e;">#当serverId对应的服务器挂掉后，强制定向到其他健康的服务器
+    </span><span style="color:#bf616a;">option </span><span style="color:#c0c5ce;">abortonclose
+    </span><span style="color:#bf616a;">timeout </span><span style="color:#c0c5ce;">connect </span><span style="color:#d08770;">3s
+    </span><span style="color:#bf616a;">timeout </span><span style="color:#c0c5ce;">client </span><span style="color:#d08770;">1m
+    </span><span style="color:#bf616a;">timeout </span><span style="color:#c0c5ce;">server </span><span style="color:#d08770;">1m
+
+</span><span style="color:#bf616a;">frontend </span><span style="color:#c0c5ce;">main
+    </span><span style="color:#bf616a;">bind </span><span style="color:#c0c5ce;">*:</span><span style="color:#d08770;">15555
+    </span><span style="color:#bf616a;">default_backend </span><span style="color:#c0c5ce;">ss-server
+
+</span><span style="color:#bf616a;">backend </span><span style="color:#c0c5ce;">ss-server
+    </span><span style="color:#bf616a;">server </span><span style="color:#c0c5ce;">hk xxx.xxx.xxx.xxx:</span><span style="color:#d08770;">15555</span><span style="color:#c0c5ce;"> check inter </span><span style="color:#d08770;">1000</span><span style="color:#c0c5ce;"> rise </span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;"> fall </span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;"> weight </span><span style="color:#d08770;">254
+
+    </span><span style="color:#bf616a;">server </span><span style="color:#c0c5ce;">tokyo xxx.xxx.xxx.xxx:</span><span style="color:#d08770;">15555</span><span style="color:#c0c5ce;"> check inter </span><span style="color:#d08770;">1000</span><span style="color:#c0c5ce;"> rise </span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;"> fall </span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;"> weight </span><span style="color:#d08770;">252
+
+    </span><span style="color:#bf616a;">server </span><span style="color:#c0c5ce;">chk xxx.xxx.xxx.xxx:</span><span style="color:#d08770;">15555</span><span style="color:#c0c5ce;"> check inter </span><span style="color:#d08770;">1000</span><span style="color:#c0c5ce;"> rise </span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;"> fall </span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">  weight </span><span style="color:#d08770;">256
+    </span><span style="color:#bf616a;">server </span><span style="color:#c0c5ce;">hs-hk xxx.xxx.xxx.xxx:</span><span style="color:#d08770;">15555</span><span style="color:#c0c5ce;"> check inter </span><span style="color:#d08770;">1000</span><span style="color:#c0c5ce;"> rise </span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;"> fall </span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;"> weight </span><span style="color:#d08770;">256
+</span><span style="color:#bf616a;">listen </span><span style="color:#c0c5ce;">stats </span><span style="color:#65737e;"># Define a listen section called &quot;stats&quot;
+  </span><span style="color:#bf616a;">bind </span><span style="color:#d08770;">localhost</span><span style="color:#c0c5ce;">:</span><span style="color:#d08770;">9000 </span><span style="color:#65737e;"># Listen on localhost:9000
+  </span><span style="color:#bf616a;">mode </span><span style="color:#c0c5ce;">http
+  </span><span style="color:#bf616a;">stats </span><span style="color:#c0c5ce;">refresh </span><span style="color:#d08770;">30s
+  </span><span style="color:#bf616a;">stats </span><span style="color:#c0c5ce;">enable  </span><span style="color:#65737e;"># Enable stats page
+  </span><span style="color:#bf616a;">stats </span><span style="color:#c0c5ce;">hide-version  </span><span style="color:#65737e;"># Hide HAProxy version
+  </span><span style="color:#bf616a;">stats </span><span style="color:#c0c5ce;">realm Haproxy\ Statistics  </span><span style="color:#65737e;"># Title text for popup window
+  </span><span style="color:#bf616a;">stats </span><span style="color:#c0c5ce;">uri /haproxy_stats  </span><span style="color:#65737e;"># Stats URI
+</span></pre>
+    </div>
+
+    
+    
+
+    <div class="post-footer">
+        
+        
+        <div class="post-tags">
+            
+            <a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;tags&#x2F;v2ray&#x2F;">#v2ray</a>
+            
+            <a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;tags&#x2F;haproxy&#x2F;">#Haproxy</a>
+            
+            <a href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;tags&#x2F;tools&#x2F;">#Tools</a>
+            
+        </div>
+        
+        
+        <div class="post-nav">
+            
+            <a class="previous" href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;http2-dos&#x2F;">‹ Http2 dos</a>
+            
+            
+            <a class="next" href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;macos-vpnyu-lu-you-biao&#x2F;">MacOS-VPN与路由表 ›</a>
+            
+            
+            
+        </div>
+        
+
+        
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6114beb8d8864329b333a24dae1994cc"}'></script><!-- End Cloudflare Web Analytics -->
+    </div>
+
+    
+    
+    
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = 'http://127.0.0.1:1111/v2ray-haproxy/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'v2ray-haproxy/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://ylck-me.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+    
+    
+</article>
+
+
+            </div>
+        </main>
+
+        
+        
+    </div>
+
+    
+    <script type="text/javascript" src="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;even.js"></script>
+    
+<script src="/livereload.js?port=1000&mindelay=10"></script></body>
+
+</html>
