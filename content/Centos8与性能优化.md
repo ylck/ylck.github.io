@@ -46,8 +46,19 @@ iptables -t nat -A PREROUTING -p udp -i eth0 --dport 51820 -j DNAT --to-destinat
 iptables -A FORWARD -p udp -d 34.84.6.100 --dport 51820 -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT∏
 ```
 
+> ### nice&&renice
+
+> 对于 CPU 密集型的程序 -20 fast 19 low
+
+```bash
+renice -20 -g `pgrep v2ray`
+1637 (process group ID) old priority -20, new priority -20
+```
+
 # 参考
 
 [RHEL8 发行说明](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/considerations_in_adopting_rhel_8/index#performance-analysis-and-observability-tools_kernel)
 
 [tuned](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/monitoring_and_managing_system_status_and_performance/getting-started-with-tuned_monitoring-and-managing-system-status-and-performance#tuned-profiles_getting-started-with-tuned)
+
+[renice](https://linux.cn/article-4742-1.html)
